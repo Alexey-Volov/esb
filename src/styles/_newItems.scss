@@ -1,0 +1,33 @@
+.newItems {
+    margin-top: 100px;
+}
+
+.newItems__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    // display: flex;
+    // justify-content: space-between;
+}
+.newItems__card {
+    border-radius: 20px;
+    background: var(--grey);
+}
+.newItems__card-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--main-black);
+    margin-bottom: 40px;
+}
+.newItems__card-price {
+    font-family: var(--font-family);
+    font-weight: 100;
+    font-size: 40px;
+    color: var(--main-black);
+    display: flex;
+    justify-content: space-between;
+}
+.newItems__card-content{
+    padding: 20px;
+}

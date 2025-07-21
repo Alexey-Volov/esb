@@ -1,0 +1,13 @@
+.hits__wrapper {
+    // display: flex;
+    // gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    .newItems__card {
+        border: 1px solid #000;
+    }
+    .newItems__card-title {
+        white-space: nowrap;
+    }
+}

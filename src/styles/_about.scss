@@ -1,0 +1,79 @@
+.about {
+
+}
+
+.about__wrapper {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+}
+.about__card {
+    border: 1px solid var(--main-black);
+    width: 278px;
+    img {
+        height: 100%;
+    }
+    border-radius: 20px;
+    &.with-image {
+        padding: unset;
+    }
+    &.no-image {
+        padding: 20px;
+
+    }
+    
+}
+
+.about__catalog {
+    position: relative;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #292C36;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+    z-index: 9;
+    margin-bottom: 100px;
+        overflow: hidden;
+
+    &::after {
+        position: absolute;
+        content: "";
+        // background-color: #999;
+        background-image: url("./../assets/Topology.svg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 792px;
+        height: 197px;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        
+    }
+}
+.about__title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--white);
+}
+.about__text {
+    display: flex;
+    justify-content: space-between;
+}
+.about__text-left {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: var(--white);
+}
+.about__text-right {
+}

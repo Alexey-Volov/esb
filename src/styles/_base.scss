@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+html {
+	scroll-behavior: smooth;
+	// background-color: rgb(39, 39, 39);
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-family);
+	text-wrap: balance;
+}
+
+img {
+	display: block;
+}
+
+a {
+	color: var(--link-color);
+}
+
+code {
+	background-color: #e9f1f6;
+	padding: 0.2rem;
+	border-radius: 4px;
+}
+
+.default-btn {
+	border-radius: 4px;
+	display: inline-block;
+	border: 1px solid var(--red);
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 14px;
+	padding: 12px 20px;
+	color: var(--red);
+}
+// button {
+// 	cursor: pointer;
+// }
+.title {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 30px;
+	color: var(--main-black);
+	padding-left: 26px;
+	position: relative;
+	margin-bottom: 50px;
+	&::before {
+		position: absolute;
+		content: "";
+		border-radius: 100%;
+		background-color: var(--main-black);
+		left: 0;
+		width: 16px;
+		height: 16px;
+		transform: translateY(50%);
+	}
+}
+section + section {
+	margin-top: 100px;
+}

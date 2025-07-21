@@ -1,0 +1,80 @@
+.form-price {
+}
+.container {
+}
+.form-price__wrapper {
+    position: relative;
+    background-color: #292C36;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 105px;
+    overflow: hidden;
+    z-index: 9;
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 792px;
+        height: 240px;
+        // background-color: #999;
+        background-image: url("./../assets/Topology-2.svg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        
+    }
+}
+.form-price__top {
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--white);
+    h4 {   
+        font-size: 40px;
+        margin-bottom: 20px;
+
+    }
+    p {
+        font-weight: 500;
+        font-size: 14px;
+        
+    }
+}
+.form-price__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.form-price__inputs {
+    display: flex;
+    gap: 20px;
+    input {
+        backdrop-filter: blur(3.0999999046325684px);
+        background: var(--white);
+        border-radius: 30px;
+        padding: 12px 30px 12px 15px;
+        &::placeholder {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--grey2);
+        }
+    }
+
+}
+.form-price__btn {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--main-black);
+    border-radius: 30px;
+    padding: 12px 30px;
+    backdrop-filter: blur(3.0999999046325684px);
+    background: var(--green);
+    button {
+        
+    }
+}
