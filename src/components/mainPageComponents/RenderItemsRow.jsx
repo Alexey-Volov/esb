@@ -1,4 +1,4 @@
-import ArrowD from "./../assets/arrow-newItems.svg"
+import ArrowD from "./../../assets/arrow-newItems.svg"
 const RenderItemsRow = ({id, img, title, price}) => {
     return ( 
         <div key={id} className="newItems__card">

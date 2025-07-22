@@ -1,14 +1,18 @@
-import BtnCall from "./btns/BtnCall";
-import Logo from "./../assets/Logo.svg"
+import { Link, useLocation } from "react-router-dom";
+import BtnCall from "../btns/BtnCall";
+import Logo from "./../../assets/Logo.svg"
+
 const HeaderTop = () => {
+    const location = useLocation()
+    const currentPath = location.pathname;
     return ( 
         <div className="header__top">
             <nav className="header__nav nav">
                 <div className="header__logo">
                     <a href="#"><img src={Logo} alt="logo" /></a>
                 </div>
-                <a href="#" className="header__link active">Главная</a>
-                <a href="#" className="header__link">Каталог</a>
+                <Link className={`header__link ${currentPath === "/" ? "active" : ""}`} to="/">Главная</Link>
+                <Link className={`header__link ${currentPath === "/catalog" ? "active" : ""}`} to="/catalog">Каталог</Link>
             </nav>
             <div className="header__contacts">
                 <div className="header__socials">

@@ -1,4 +1,4 @@
-import footerData from "../jsData/footerData";
+import footerData from "../../jsData/footerData";
 import FooterDoubleList from "./FooterDoubleList";
 
 import FooterList from "./FooterList";

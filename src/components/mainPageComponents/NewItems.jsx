@@ -1,8 +1,8 @@
 import Title from "./Title";
-import ArrowD from "./../assets/arrow-newItems.svg";
-import newImg1 from "./../assets/newImg-1.png"
-import newImg2 from "./../assets/newImg-2.png"
-import newImg3 from "./../assets/newImg-3.png"
+import ArrowD from "./../../assets/arrow-newItems.svg";
+import newImg1 from "./../../assets/newImg-1.png"
+import newImg2 from "./../../assets/newImg-2.png"
+import newImg3 from "./../../assets/newImg-3.png"
 import RenderItemsRow from "./RenderItemsRow";
 
 

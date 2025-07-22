@@ -1,7 +1,7 @@
 import Title from "./Title";
-import hit1 from "./../assets/hits-img-1.png"
-import hit2 from "./../assets/hits-img-2.png"
-import hit3 from "./../assets/hits-img-3.png"
+import hit1 from "./../../assets/hits-img-1.png"
+import hit2 from "./../../assets/hits-img-2.png"
+import hit3 from "./../../assets/hits-img-3.png"
 import RenderItemsRow from "./RenderItemsRow";
 const Hits = () => {
 

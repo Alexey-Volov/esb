@@ -6,12 +6,14 @@
 @use "./nav-icon";
 @use "./base";
 
-@use "./header";
-@use "./benefits";
-@use "./newItems";
-@use "./about";
-@use "./realized";
-@use "./hits";
-@use "./formPrice";
-@use "./contacts";
-@use "./footer";
+@use "./mainPageCss/header";
+@use "./mainPageCss/benefits";
+@use "./mainPageCss/newItems";
+@use "./mainPageCss/about";
+@use "./mainPageCss/realized";
+@use "./mainPageCss/hits";
+@use "./mainPageCss/formPrice";
+@use "./mainPageCss/contacts";
+@use "./mainPageCss/footer";
+
+@use "./catalogCss/catalog"

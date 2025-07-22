@@ -1,32 +1,22 @@
 import { useState } from 'react'
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import "./styles/main.scss"
-import Header from './components/Header'
 
-import Benefits from './components/Benefits'
-import NewItems from './components/NewItems'
-import About from './components/About'
-import Realized from './components/Realized'
-import Hits from './components/Hits'
-import FormPrice from './components/FormPrice'
-import Contacts from './components/Contacts'
-import Footer from './components/Footer'
-
+import MainPage from './pages/MainPage'
+import Catalog from './pages/Catalog'
 function App() {
 
 
   return (
-    <>
-      <Header/>
-      <Benefits/>
-      <NewItems/>
-      <About/>
-      <Realized/>
-      <Hits/>
-      <FormPrice/>
-      <Contacts/>
-      <Footer/>
-    </>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path='/' element={<MainPage/>}/>
+          <Route path='/catalog' element={<Catalog/>}/>
+        </Routes>
+      </div>
+      
+    </Router>
   )
 }
 

@@ -1,7 +1,7 @@
-import BtnCall from "./btns/BtnCall";
+import BtnCall from "../btns/BtnCall";
 import ContactsCity from "./ContactsCity";
 import Title from "./Title";
-import googleMap from "./../assets/map.png"
+import googleMap from "./../../assets/map.png"
 const Contacts = () => {
     // const city = [
     //         {id: 0, city: "г. Москва, ул. Бутлерова 17", active: true},

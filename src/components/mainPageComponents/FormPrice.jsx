@@ -1,11 +1,14 @@
-const FormPrice = () => {
+const FormPrice = ({title, text, secontText}) => {
     return ( 
         <section className="form-price">
             <div className="container">
                 <div className="form-price__wrapper">
                     <div className="form-price__top">
-                        <h4>Рассчитать стоимость</h4>
-                        <p>Оставьте заявку на бесплатный рассчет стоимости Вашего проекта!</p>
+                        {/* <h4>Рассчитать стоимость</h4> */}
+                        <h4>{title}</h4>
+                        {/* <p>Оставьте заявку на бесплатный рассчет стоимости Вашего проекта!</p> */}
+                        <p>{text}</p>
+                        {secontText && <p>{secontText}</p>}
                     </div>
                     <div className="form-price__bottom">
                         <div className="form-price__inputs">

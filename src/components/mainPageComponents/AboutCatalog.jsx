@@ -1,4 +1,4 @@
-import btnGreen from "./../assets/btnGreen.svg"
+import btnGreen from "./../../assets/btnGreen.svg"
 const AboutCatalog = () => {
     return ( 
         <div className="about__catalog">

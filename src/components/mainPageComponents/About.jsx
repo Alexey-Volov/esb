@@ -1,8 +1,9 @@
-import Title from "./Title";
-import img1 from "./../assets/aboutImg1.png"
-import img2 from "./../assets/aboutImg2.png"
-import img3 from "./../assets/aboutImg3.png"
-import img4 from "./../assets/aboutImg4.png"
+
+import Title from "./Title"
+import img1 from "./../../assets/aboutImg1.png"
+import img2 from "./../../assets/aboutImg2.png"
+import img3 from "./../../assets/aboutImg3.png"
+import img4 from "./../../assets/aboutImg4.png"
 import AboutCatalog from "./AboutCatalog";
 
 
