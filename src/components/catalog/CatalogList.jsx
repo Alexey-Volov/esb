@@ -11,6 +11,7 @@ import img8 from "./../../assets/catalogItems/8.png"
 import img9 from "./../../assets/catalogItems/9.png"
 import img10 from "./../../assets/catalogItems/10.png"
 import FormPrice from "../mainPageComponents/FormPrice";
+import { Link } from "react-router-dom";
 const CatalogList = () => {
     const catalogItems = [
         {id: 0, content: "Скамейки", active: false, img: img1},
@@ -23,7 +24,7 @@ const CatalogList = () => {
         {id: 7, content: "Умный город", active: false, img: img8},
         {id: 8, content: "Качели", active: false, img: img9},
         {id: 9, content: "Урны", active: false, img: img10},
-        {id: 10, content: "Хиты продаж", active: true},
+        {id: 10, content: "Хиты продаж", active: true, link: true},
         {id: 11, content: "Новинки", active: true},
     ]
     
@@ -36,10 +37,11 @@ const CatalogList = () => {
                 <Title title="Каталог"/>
                 <div className="catalog-list__wrapper">
                     {catalogItems.map((item) => {
+                        const isLink = item.link ? <Link className={item.active ? "catalog-list__text catalog-list__text--active" : "catalog-list__text"} to="/hitsCatalog">{item.content}</Link> : <p className={item.active ? "catalog-list__text catalog-list__text--active" : "catalog-list__text"}>{item.content}</p>;
                         return (
                             <div key={item.id} className="catalog-list__card">
                                 {item.img && <img src={item.img} alt="img"/>}
-                                <p className={item.active ? "catalog-list__text catalog-list__text--active" : "catalog-list__text"}>{item.content}</p>
+                                {isLink}
                             </div>
                         )
                         
@@ -48,6 +50,7 @@ const CatalogList = () => {
                 <FormPrice title="Рассчитать стоимость" text="Оставьте заявку и мы поможем подобрать товары из каталога или обсудим детали индивидуального заказа"/>
             </div>
         </section>
+        
      );
 }
  
