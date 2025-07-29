@@ -6,7 +6,7 @@ import newImg3 from "./../../assets/newImg-3.png"
 import RenderItemsRow from "./RenderItemsRow";
 
 
-const NewItems = () => {
+const NewItems = ({title}) => {
 
     const newItemsList = [
         {id: 0, title: 'Пергола с качелями "Орион"', price: "248 000 ₽", img: newImg1},
@@ -16,7 +16,7 @@ const NewItems = () => {
     return ( 
         <section className="newItems">
             <div className="container">
-                <Title title="Новинки"/>
+                <Title title={title}/>
                 <div className="newItems__row">
                     {/* {renderNewItemsList} */}
                     {newItemsList.map((item) => {

@@ -1,0 +1,34 @@
+.accordion {
+    color: #444;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    &.active {
+        margin-bottom: 30px;
+    }
+}
+.accordion__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.accordion__item {
+    cursor: pointer;
+    border: 1px solid var(--grey2);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: var(--font-family);
+    color: var(--main-black);
+    button {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    p {  
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        
+    }
+}

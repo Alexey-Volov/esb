@@ -16,4 +16,8 @@
 @use "./mainPageCss/contacts";
 @use "./mainPageCss/footer";
 
-@use "./catalogCss/catalog"
+@use "./catalogCss/catalog";
+@use "./card/cards";
+
+
+@use "./accordeon";

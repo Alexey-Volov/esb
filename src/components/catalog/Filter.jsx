@@ -35,22 +35,6 @@ const Filter = () => {
                 <span>{price[0]?.toLocaleString?.() ?? 0}</span> –{" "}
                 <span>{price[1]?.toLocaleString?.() ?? 0}</span>
             </div>
-            {/* <div className="price-checkboxes">
-                <label>
-                    Хиты продаж
-                    <input type="checkbox" checked={hits} onChange={() => setHits(!hits)} />
-                </label>
-
-                <label>
-                    Новинки
-                    <input type="checkbox" checked={newItems} onChange={() => setNewItems(!newItems)}/>
-                </label>
-
-                <label>
-                    Товары со скидкой
-                    <input type="checkbox" checked={discounted} onChange={() => setDiscounted(!discounted)} />
-                </label>
-            </div> */}
             <div className="price-checkboxes">
                 <label className="switch-label">
                     Хиты продаж

@@ -7,6 +7,7 @@ import Hits from "../components/mainPageComponents/Hits";
 import FormPrice from "../components/mainPageComponents/FormPrice";
 import Contacts from "../components/mainPageComponents/Contacts";
 import Footer from "../components/mainPageComponents/Footer";
+import Accordeon from "../components/accordeon";
 const MainPage = () => {
     return ( 
         <>
